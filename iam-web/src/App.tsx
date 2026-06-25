@@ -5,15 +5,18 @@ import Public from './components/Public'
 
 import './App.css'
 
+
 function App() {
   const [count, setCount] = useState(0)
   const isAuthenticated = useAuthentication();
-  
+
   return (
-    <div>
-      Hello!
+    <>
+      <h1>
+      Hello!  {count}
+      </h1>
       {isAuthenticated ? <Dash/> : <Public/> } 
-    </div>
+    </>
   )
 }
 
