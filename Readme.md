@@ -1,7 +1,18 @@
-# IAM Demo - A client authorization project using keycloak for user control (WIP)
+# IAM Demo - A client authorization project using Keycloak for user control (WIP)
 
-This is a sample project that I've made to study usage of Keycloak, to learn more about external identity providers.
-The keycloak within the docker container uses a realm of users to authorize logins and permissions within a full-stack application.
+<p align="center">
+  <img src="/docs/kc.png" width="60" />
+  <img src="/docs/node.png" width="60" />
+  <img src="/docs/react.png" width="60" />
+  <img src="/docs/ts.png" width="60" />
+  <img src="/docs/vite.png" width="60" />
+</p>
 
-The front-end application is a somewhat ordinary React app that is connected to a Node.js express backend server.  
-![Basic architecture](/docs/basic-architecture.drawio.png)
+This is a sample project that I've made to study usage of Keycloak, to learn more about external identity providers.  
+The Keycloak instance within the Docker container uses a realm of users to authorize logins and permissions within a full-stack application.
+
+The front-end application is a somewhat ordinary React app that is connected to a Node.js Express backend server.
+
+<p align="center">
+  <img src="/docs/basic-architecture.drawio.png" width="500" />
+</p>
