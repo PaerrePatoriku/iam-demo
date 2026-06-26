@@ -5,7 +5,7 @@ dotenv.config({ path: `.env` })
 
 const app: express.Application = express();
 const port = process.env.NODE_APPLICATION_LISTEN_PORT;
-
+app.use(express.json())
 app.use("/api", useRouter())
 
 app.listen(port, () => {
