@@ -7,12 +7,12 @@ import './App.css'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
   const isAuthenticated = useAuthentication();
   return (
     <>
       <h1>
-      Hello! %VITE_KEYCLOAK_CLIENT_ID% {count}
+      Hello! 
       </h1>
       {isAuthenticated ? <Dash/> : <Public/> } 
     </>
