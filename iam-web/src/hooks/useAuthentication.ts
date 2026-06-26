@@ -14,7 +14,7 @@ export const useAuthentication = () =>
         const client = new Keycloak({
             url : import.meta.env.VITE_KEYCLOAK_URL,
             realm : import.meta.env.VITE_KEYCLOAK_REALM,
-            clientId : import.meta.env.VITE_KEYCLOAK_CLIENT_ID
+            clientId : import.meta.env.VITE_KEYCLOAK_CLIENT_ID,
         })
 
         client.init({ onLoad : "login-required" })
