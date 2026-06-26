@@ -12,5 +12,5 @@ services:
       - KC_BOOTSTRAP_ADMIN_PASSWORD=admin
     command: start-dev
     ports: 
-      - 4000:4000
+      - 8080:8080
     
