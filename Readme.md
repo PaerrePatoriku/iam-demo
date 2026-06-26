@@ -1,4 +1,4 @@
-# IAM Demo - A client authorization project using keycloak for user control
+# IAM Demo - A client authorization project using keycloak for user control (WIP)
 
 This is a sample project that I've made to study usage of Keycloak, to learn more about external identity providers.
 The keycloak within the docker container uses a realm of users to authorize logins and permissions within a full-stack application.

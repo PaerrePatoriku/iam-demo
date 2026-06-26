@@ -1,7 +1,7 @@
 # The backend portion
 Authorizes data to the user based on the authentication using keycloak
 
-(heavy still WIP....)
+
 
 # Basic structure
 My basic idea for the demo backend:
