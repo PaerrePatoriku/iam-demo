@@ -5,7 +5,7 @@ import { createOrder } from '../../services/dataservice';
 const router = Router();
 
 router.get("/orders", (req, res) => {
-    res.send("GET Data Response")
+    res.send(["Row #1", "Row #2", "Row #3"])
 })
 router.post("/orders", async (req, res, next) => {
     try {

@@ -11,9 +11,6 @@ function App() {
   const isAuthenticated = useAuthentication();
   return (
     <>
-      <h1>
-      Hello! 
-      </h1>
       {isAuthenticated ? <Dash/> : <Public/> } 
     </>
   )
