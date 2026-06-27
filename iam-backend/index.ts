@@ -9,5 +9,5 @@ app.use(express.json())
 app.use("/api", useRouter())
 
 app.listen(port, () => {
-    console.log(`Started backend on the port ${port}!`)
+    console.log(`Started backend on http://localhost:${port}!`)
 })

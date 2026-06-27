@@ -1,17 +1,17 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import Keycloak from 'keycloak-js'
 export const useAuthentication = () => 
 {
     const [isAuthenticated, setAuthenticated] = useState(false)
-    //Strict mode causes fun issues in dev (useEffect runs twice here) so add a ref to track state
-    const isInitialized = useRef(false);
+
+    var client : Keycloak;
     useEffect(() => {
-        if (isInitialized.current)
+        //Since we are using useEffect, it runs twice for a checkup in development
+        //We do not want to init keycloak twice, so check the state beforehand
+        if (client && client.didInitialize)
             return;
-
-        isInitialized.current = true
-
-        const client = new Keycloak({
+        
+        client = new Keycloak({
             url : import.meta.env.VITE_KEYCLOAK_URL,
             realm : import.meta.env.VITE_KEYCLOAK_REALM,
             clientId : import.meta.env.VITE_KEYCLOAK_CLIENT_ID,
@@ -23,7 +23,7 @@ export const useAuthentication = () =>
             setAuthenticated(res)
 
         })
-
+        return
     }, [])
 
     return isAuthenticated;
