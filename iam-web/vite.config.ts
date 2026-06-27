@@ -9,7 +9,6 @@ dotenv.config({ path : `${envDir}/.env` })
 
 export default defineConfig({
   plugins: [react()],
-  envDir : envDir,
   server : {
     proxy : {
       "/api": {
