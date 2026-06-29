@@ -5,10 +5,10 @@ import { checkJwtToken } from '../../middleware/authorization';
 
 const router = Router();
 
-router.get("/orders",checkJwtToken(), (req, res) => {
+router.get("/orders", (req, res) => {
     res.send(["Row #1", "Row #2", "Row #3"])
 })
-router.post("/orders", checkJwtToken(), async (req, res, next) => {
+router.post("/orders", async (req, res, next) => {
     try {
         
         const body = CreateOrderSchema.parse(req.body);
