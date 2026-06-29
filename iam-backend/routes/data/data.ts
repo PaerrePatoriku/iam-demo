@@ -1,7 +1,6 @@
 import { Router } from 'express'
 import { CreateOrderSchema } from '../../schema/data/order';
 import { createOrder } from '../../services/dataservice';
-import { checkJwtToken } from '../../middleware/authorization';
 
 const router = Router();
 
