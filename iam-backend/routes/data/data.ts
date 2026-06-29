@@ -1,6 +1,6 @@
 import { Router } from 'express'
-import { CreateOrderSchema } from '../../schema/data/order';
-import { createOrder } from '../../services/dataservice';
+import { CreateOrderSchema } from '@/schema/data/order';
+import { createOrder } from '@/services/dataservice';
 
 const router = Router();
 

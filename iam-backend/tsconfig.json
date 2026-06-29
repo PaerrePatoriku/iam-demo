@@ -3,9 +3,12 @@
     "target": "es6",
     "module": "commonjs",
     "rootDir": "./",
+    "paths": {
+      "@/*" : ["./*"]
+    },
     "outDir": "./build",
     "esModuleInterop": true,
-    "strict": true
+    "strict": true,
   },
   "include": [
     "**/*.ts",

@@ -1,8 +1,8 @@
 import express from 'express'
 import dotenv from 'dotenv'
-import { useRouter } from './routes/core';
-import { checkJwtToken } from './middleware/authorization';
-import { attachUser } from './middleware/userAttachment';
+import { useRouter } from '@/routes/core';
+import { checkJwtToken } from '@/middleware/authorization';
+import { attachUser } from '@/middleware/userAttachment';
 dotenv.config({ path: `.env` })
 
 const app: express.Application = express();

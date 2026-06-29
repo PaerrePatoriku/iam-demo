@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { useDataRouter } from './data/data';
+import { useDataRouter } from '@/routes/data/data';
 const router = Router();
 
 router.get("/", (req, res) => {

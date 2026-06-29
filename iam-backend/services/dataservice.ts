@@ -1,4 +1,4 @@
-import { CreateOrderPayload } from "../schema/data/order";
+import { CreateOrderPayload } from "@/schema/data/order";
 
 export async function createOrder(data : CreateOrderPayload) {
     //implement: actual in memory db logic.
