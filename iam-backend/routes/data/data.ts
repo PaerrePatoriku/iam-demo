@@ -1,13 +1,14 @@
 import { Router } from 'express'
 import { CreateOrderSchema } from '../../schema/data/order';
 import { createOrder } from '../../services/dataservice';
+import { checkJwtToken } from '../../middleware/authorization';
 
 const router = Router();
 
-router.get("/orders", (req, res) => {
+router.get("/orders",checkJwtToken(), (req, res) => {
     res.send(["Row #1", "Row #2", "Row #3"])
 })
-router.post("/orders", async (req, res, next) => {
+router.post("/orders", checkJwtToken(), async (req, res, next) => {
     try {
         
         const body = CreateOrderSchema.parse(req.body);

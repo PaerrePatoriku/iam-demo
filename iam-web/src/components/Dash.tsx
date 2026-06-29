@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios'
+import { useAuthenticationRequestConfig } from '../hooks/authentication';
 function Dash() {
     const [pageData, setDataView] = useState([])
     const fetched = useRef(false);
@@ -7,7 +8,7 @@ function Dash() {
     useEffect(() => {
         if (fetched.current) return;
         fetched.current = true;
-        axios.get("/api/data/orders")
+        axios.get("/api/data/orders", useAuthenticationRequestConfig())
             .then((res) => {
                 console.log(res);
                 setDataView(res.data);

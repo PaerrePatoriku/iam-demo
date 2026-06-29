@@ -1,6 +1,19 @@
 import { useEffect, useState } from "react";
 import Keycloak from 'keycloak-js'
-export const useAuthentication = () => 
+import type { AxiosRequestConfig } from "axios";
+
+let _jwt : string;
+
+function useAuthenticationRequestConfig() : AxiosRequestConfig {
+    const config : AxiosRequestConfig = {
+        headers : {
+            authorization : `Bearer ${_jwt}`
+        }
+    }
+    return config;
+}
+
+const useAuthentication = () => 
 {
     const [isAuthenticated, setAuthenticated] = useState(false)
 
@@ -21,10 +34,12 @@ export const useAuthentication = () =>
             .then((res) => { 
             console.log(res);
             setAuthenticated(res)
-
+            console.log(client.token)
+            _jwt = client.token!;
         })
         return
     }, [])
 
     return isAuthenticated;
 }
+export { useAuthentication, useAuthenticationRequestConfig }

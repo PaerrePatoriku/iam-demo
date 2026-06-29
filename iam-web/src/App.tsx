@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useAuthentication } from './hooks/useAuthentication'
+import { useAuthentication } from './hooks/authentication'
 import Dash from './components/Dash'
 import Public from './components/Public'
 
