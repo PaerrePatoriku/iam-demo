@@ -19,8 +19,8 @@ The front-end application is a somewhat ordinary React app that is connected to 
 
 # Missing content
 
-Docker turnkey setup - missing default realms, clients, mappers etc.
-Adding a router for the react app.
-Adding role based auth demos 
-Adding styling and more visual content to the react app
-Proper session related ui elements such as logout and an improved login.
+Docker turnkey setup - missing default realms, clients, mappers etc.  
+Adding a router for the react app.  
+Adding role based auth demos   
+Adding styling and more visual content to the react app  
+Proper session related ui elements such as logout and an improved login.  
