@@ -19,6 +19,8 @@ The front-end application is a somewhat ordinary React app that is connected to 
 
 # Missing content
 
+This aint complete, so I've listed stuff I'm still doing   
+
 Docker turnkey setup - missing default realms, clients, mappers etc.  
 Adding a router for the react app.  
 Adding role based auth demos   
