@@ -1,0 +1,11 @@
+{
+  "name": "iam-demo",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <img src=\"/docs/kc.png\" width=\"60\" />   <img src=\"/docs/node.png\" width=\"60\" />   <img src=\"/docs/react.png\" width=\"60\" />   <img src=\"/docs/ts.png\" width=\"60\" />   <img src=\"/docs/vite.png\" width=\"60\" /> </p>",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix iam-backend\" \"npm run dev --prefix iam-web\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
