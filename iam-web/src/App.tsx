@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { useAuthentication } from './hooks/authentication'
-import Dash from './components/Dash'
-import Public from './components/Public'
+import { useAuthentication } from '@/hooks/authentication'
+import Dash from '@/components/Dash'
+import Public from '@/components/Public'
 
-import './App.css'
+import '@/App.css'
 
 
 function App() {

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios'
-import { useAuthenticationRequestConfig } from '../hooks/authentication';
+import { useAuthenticationRequestConfig } from '@/hooks/authentication';
 function Dash() {
     const [pageData, setDataView] = useState([])
     const fetched = useRef(false);
