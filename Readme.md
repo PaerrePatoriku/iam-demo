@@ -24,3 +24,10 @@ Adding a router for the react app.
 Adding role based auth demos   
 Adding styling and more visual content to the react app  
 Proper session related ui elements such as logout and an improved login.  
+
+
+Fix up stuff with keycloak:
+- Ui flash problems, nonpersistent client (add global auth state)
+- _jwt is also set to be non reactive variable -> persist in the global auth
+- replace onload with check-sso
+- embedded login
